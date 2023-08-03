@@ -28,7 +28,6 @@ class VideoDownloader:
             logger.info(f"YOUTUBE VIDEO DOWNLOADEED TO{ os.path.join(self.save_path,video.default_filename)}")
             return os.path.join(self.save_path,video.default_filename)
         except Exception as e:
-            logger.error(e)
             raise CustomException(e,sys)
     
     

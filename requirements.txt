@@ -1,8 +1,8 @@
-
 pandas
 numpy
 Flask
 ipykernel
 pytube
 transformers
+datasets
 -e .

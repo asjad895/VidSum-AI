@@ -3,6 +3,7 @@ import sys
 import tempfile
 import warnings
 from typing import List, Dict
+
 from dataclasses import dataclass
 from VidSumAI.logger import logger
 import ffmpeg
@@ -72,7 +73,7 @@ class SubtitleGenerator:
                 subtitles_paths[video_path] = subtitle_path
                 logger.info(f'Subtitle generated: {subtitle_path}')
             except ffmpeg._run.Error as e:
-                logger.error(f'Error generating subtitle for {os.path.basename(audio_path)}: {e}')
+                logger.info(f'Error generating subtitle for {os.path.basename(audio_path)}: {e}')
 
         return subtitles_paths,transcript
     
@@ -92,7 +93,7 @@ class SubtitleGenerator:
             )
     
         except Exception as e:
-            logger.error(f'Error loading model: {e}')
+            logger.info(f'Error loading model: {e}')
             raise e
         
         return subtitles_paths,audio_paths

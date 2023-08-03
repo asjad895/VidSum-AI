@@ -13,3 +13,5 @@ logfilepath=os.path.join(logdir,filename)
 logging.basicConfig(filename=logfilepath,filemode='w',
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     level=logging.INFO)
+
+logger = logging.getLogger("VidSumAI")

@@ -43,5 +43,5 @@ class Summarizer:
 
             return summary
         except Exception as e:
-            logger.error(f"Error summarizing text check your best model: {e}")
+            logger.info(f"Error summarizing text check your best model: {e}")
             raise CustomException(e,sys)
