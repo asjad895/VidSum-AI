@@ -3,4 +3,5 @@ pandas
 numpy
 Flask
 ipykernel
+pytube
 -e .
