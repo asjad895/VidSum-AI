@@ -1,0 +1,60 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<section id="intro">
+    <div class="container">
+        <div class="intro-text">
+            <h1>Welcome to VidSum AI</h1>
+            <div class="logo">
+                <img src="{{ url_for('static', filename='image/logo.png') }}" alt="VidSum AI Logo">
+            </div>
+            <p>Your Intelligent Video Summarization Solution</p>
+            <p>Upload your video, generate subtitles, and get a concise summary.</p>
+            <a href="#upload" class="cta-button">Get Started</a>
+        </div>
+    </div>
+</section>
+
+<section id="services">
+    <div class="container">
+        <h2>Our Services</h2>
+        <div class="services-list">
+            <div class="service">
+                <div class="service-icon">
+                    <img src="{{ url_for('static', filename='images/service-icon1.png') }}" alt="Service Icon">
+                </div>
+                <h3>Video Upload</h3>
+                <p>Upload your video files with ease. Our AI-powered system supports a wide range of formats.</p>
+            </div>
+            <div class="service">
+                <div class="service-icon">
+                    <img src="{{ url_for('static', filename='images/service-icon2.png') }}" alt="Service Icon">
+                </div>
+                <h3>Subtitle Generation</h3>
+                <p>Automatically generate accurate subtitles for your videos using advanced language processing.</p>
+            </div>
+            <div class="service">
+                <div class="service-icon">
+                    <img src="{{ url_for('static', filename='images/service-icon3.png') }}" alt="Service Icon">
+                </div>
+                <h3>Intelligent Summarization</h3>
+                <p>Let our AI engine analyze your videos and provide concise summaries for quick understanding.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="upload">
+    <div class="upload-container">
+        <h2>Upload Your Video</h2>
+        <form method="POST" enctype="multipart/form-data">
+            <input id="file-upload" type="file" required="True" name="file" style="display: none;">
+            <label for="file-upload" class="custom-file-upload">
+                <i class="fas fa-cloud-upload-alt"></i> Choose File
+            </label>
+            <button type="submit" class="upload-button">Upload</button>
+        </form>
+    </div>
+</section>
+
+
+{% endblock %}

@@ -1,0 +1,240 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Center content */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    flex-direction: column;
+    margin: .5rem .5rem;
+}
+.intro-text p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #7e7cf8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.intro-text p:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Style introduction text */
+.intro-text {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.intro-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5em;
+}
+
+.intro-text p {
+    font-size: 1.2rem;
+    margin-bottom: 1em;
+}
+
+/* Style logo */
+.logo img {
+    max-width: 300px; /* Adjust the size as needed */
+    margin: 0 auto;
+    display: block;
+}
+
+/* Style call-to-action button */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #555;
+}
+
+
+
+/* Add the animation */
+@keyframes textPop {
+    0% {
+        transform: scale(1);
+        color: #0b4bf9;
+        font-weight: bold;
+    }
+    50% {
+        transform: scale(1.1);
+        color: #8578a5;
+        font-weight: bold;
+    }
+    100% {
+        transform: scale(1);
+        color: #05052f;
+        font-weight: bold;
+    }
+}
+
+/* Style the service container */
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #7e7cf8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+}
+
+.service h3 {
+    animation: textPop 2s infinite;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Other styles */
+/* Style header and navigation */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav logo img {
+    max-width: 20px; /* Adjust logo size as needed */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 1em;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #FF5733;
+}
+
+
+/* Style footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+.social-icons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.social-icons li {
+    margin: 0 0.5em;
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #FF5733;
+}
+
+/* Existing styles */
+
+/* Style upload section */
+#upload {
+    background-color: #f4f4f4;
+    padding: 4em 0;
+    text-align: center;
+}
+
+.upload-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.upload-container h2 {
+    margin-bottom: 1em;
+}
+
+/* Style file input */
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF5733;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.custom-file-upload:hover {
+    background-color: #FF814A;
+}
+
+/* Style upload button */
+.upload-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upload-button:hover {
+    background-color: #555;
+}
+
+/* Other styles */

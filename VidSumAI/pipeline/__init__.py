@@ -1,11 +1,12 @@
 import os
 import sys
-from VidSumAI import logger
+from VidSumAI.logger import logger
 from VidSumAI.exception import CustomException
 from VidSumAI.components.data_ingestion import DataIngestion
 from VidSumAI.components.data_validation import DataValidation
 from VidSumAI.components.data_preprocessing import DataProcessingConfig
 from VidSumAI.components.data_preprocessing import DataProcessing
+from VidSumAI.components.model_trainer import ModelTrainer
 from dataclasses import dataclass
 
 @dataclass
@@ -36,7 +37,7 @@ def run_training_pipeline(config=TrainingPipelineConfig):
     processor.process_data()
 
     # # create an instance of the `ModelTrainer` class with the specified parameters.
-    # trainer = ModelTrainer(model_checkpoint='facebook/bart-base', 
-    #                        processed_dataset_folder=config.data_processing_artifacts, 
-    #                        trainer_artifact_dir=config.model_trainer_artifacts)
-    # trainer.train()
+    trainer = ModelTrainer(model_checkpoint='facebook/bart-base', 
+                           processed_dataset_folder=config.data_processing_artifacts, 
+                           trainer_artifact_dir=config.model_trainer_artifacts)
+    trainer.train()
