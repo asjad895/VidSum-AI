@@ -54,12 +54,14 @@
 <section id="upload">
     <div class="upload-container">
         <h2>Upload Your Video</h2>
-        <form method="POST" enctype="multipart/form-data">
-            <input id="file-upload" type="file" required="True" name="file" style="display: none;">
+        <form id ="upload-form" method="POST" enctype="multipart/form-data">
+            <input id="file-upload" type="file" name="file" style="display: none;">
             <label for="file-upload" class="custom-file-upload">
                 <i class="fas fa-cloud-upload-alt"></i> Choose File
             </label>
-            <button type="submit" class="upload-button">Upload</button>
+            <h2> or paste your link</h2>
+            <input type="text" id="video-link" name="video-link" placeholder="Enter Video Link"><br>
+            <button type="submit" class="upload-button">Submit</button>
         </form>
     </div>
 </section>

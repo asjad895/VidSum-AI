@@ -192,6 +192,13 @@ nav logo img {
 .nav-links li {
     margin: 0 1em;
 }
+.web-app-name {
+    font-size: 1.5rem; /* Adjust the font size as needed */
+    transition: color 0.3s ease;
+}
+span:hover {
+    color: #FF5733;
+}
 
 .nav-links a {
     color: white;
@@ -295,6 +302,14 @@ footer {
 
 .upload-button:hover {
     background-color: #555;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-width: 40px;
 }
 
 /* Other styles */
