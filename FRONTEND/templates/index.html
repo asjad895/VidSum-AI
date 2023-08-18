@@ -6,10 +6,8 @@
         <div class="intro-text">
             <h1>Welcome to VidSum AI</h1>
             <div class="logo">
-                <img src="{{ url_for('static', filename='image/logo.png') }}" alt="VidSum AI Logo">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="VidSum AI Logo">
             </div>
-            <p>Your Intelligent Video Summarization Solution</p>
-            <p>Upload your video, generate subtitles, and get a concise summary.</p>
             <a href="#upload" class="cta-button">Get Started</a>
         </div>
     </div>
@@ -21,28 +19,38 @@
         <div class="services-list">
             <div class="service">
                 <div class="service-icon">
-                    <img src="{{ url_for('static', filename='images/service-icon1.png') }}" alt="Service Icon">
+                    <img src="{{ url_for('static', filename='images/transcript_h5uc6cu2d3rq_64.png') }}" alt="Service Icon">
                 </div>
-                <h3>Video Upload</h3>
-                <p>Upload your video files with ease. Our AI-powered system supports a wide range of formats.</p>
+                <h3>Video Transcription:</h3>
+                <p>You can upload video files or provide video links and our application will transcribe the video
+                     into text.</p>
             </div>
             <div class="service">
                 <div class="service-icon">
-                    <img src="{{ url_for('static', filename='images/service-icon2.png') }}" alt="Service Icon">
+                    <img src="{{ url_for('static', filename='images/translation_g68hxy4y44z5_64.png') }}" alt="Service Icon">
                 </div>
-                <h3>Subtitle Generation</h3>
-                <p>Automatically generate accurate subtitles for your videos using advanced language processing.</p>
+                <h3>Translations</h3>
+                <p> Transcribed Text can be Translated into different languages.</p>
             </div>
             <div class="service">
                 <div class="service-icon">
-                    <img src="{{ url_for('static', filename='images/service-icon3.png') }}" alt="Service Icon">
+                    <img src="{{ url_for('static', filename='images/summation_2n6x1vaxt8pg_64.png') }}" alt="Service Icon">
                 </div>
                 <h3>Intelligent Summarization</h3>
-                <p>Let our AI engine analyze your videos and provide concise summaries for quick understanding.</p>
+                <p>Let Our system analyze Transcribed text to provide a concise overview of the video 
+                    content,making it easier for users to understand the main content of the video.</p>
+            </div>
+            <div class="service">
+                <div class="service-icon">
+                    <img src="{{ url_for('static', filename='images/streaming_l7a6rl1bktzp_64.png') }}" alt="Service Icon">
+                </div>
+                <h3>Audio Play</h3>
+                <p>users can listen to the summary of Video through text-to-speech conversion ,enhancing user experience</p>
             </div>
         </div>
     </div>
 </section>
+
 <section id="upload">
     <div class="upload-container">
         <h2>Upload Your Video</h2>

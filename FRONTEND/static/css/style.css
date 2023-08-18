@@ -1,17 +1,37 @@
 /* Reset some default styles */
-body, h1, h2, h3, p {
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body occupies at least the full viewport height */
+}
+h1, h2, h3, p {
     margin: 0;
     padding: 0;
 }
-
+/* Common section styles */
+section {
+    padding: 4em 0; /* Vertical padding for each section */
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(to bottom, #000, #2779a7, #ffffff);
+    text-align: center;
+}
+/* Add spacing between sections */
+section + section {
+    margin-top: 2em; /* Adjust the margin as needed */
+}
 /* Center content */
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    min-height: 50vh;
     flex-direction: column;
-    margin: .5rem .5rem;
+    margin: .5rem ;
+    padding-top: 100px;
 }
 .intro-text p {
     display: flex;
@@ -48,7 +68,7 @@ body, h1, h2, h3, p {
 
 /* Style logo */
 .logo img {
-    max-width: 300px; /* Adjust the size as needed */
+    max-width: 400px; /* Adjust the size as needed */
     margin: 0 auto;
     display: block;
 }
@@ -63,6 +83,7 @@ body, h1, h2, h3, p {
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    margin-top: 10px;
 }
 
 .cta-button:hover {
@@ -91,6 +112,10 @@ body, h1, h2, h3, p {
 }
 
 /* Style the service container */
+#services{
+    margin-bottom:auto;
+}
+
 .service {
     display: flex;
     flex-direction: column;
@@ -115,10 +140,34 @@ body, h1, h2, h3, p {
     cursor: pointer;
 }
 
+.service-icon {
+    position: relative;
+    background-color: #fff; /* Set a contrasting background color */
+    border-radius: 10px;
+    padding: 10px; /* Add padding for space around the image */
+}
+
+.service-icon img {
+    max-width: 100px; /* Adjust the maximum width */
+    position: relative;
+    z-index: 1;
+}
+
+.service-icon::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white overlay */
+    z-index: 0;
+}
+
 /* Other styles */
 /* Style header and navigation */
 header {
-    background-color: #333;
+    background:linear-gradient(#000,#0b4bf9);
     color: white;
     padding: 1em;
 }
@@ -158,17 +207,19 @@ nav logo img {
 
 /* Style footer */
 footer {
-    background-color: #333;
+    background:linear-gradient(#000,#0b4bf9);
     color: white;
-    padding: 1em;
+    padding: 2em 0; /* Increase the vertical padding */
     text-align: center;
+    margin-top: auto;
 }
 
 .social-icons {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin-top: 1em;
+    margin: 1em 0; /* Adjust the margin */
+    padding: 0; /* Reset padding */
 }
 
 .social-icons li {
@@ -186,19 +237,27 @@ footer {
     color: #FF5733;
 }
 
+
 /* Existing styles */
 
 /* Style upload section */
-#upload {
-    background-color: #f4f4f4;
-    padding: 4em 0;
+ #upload { 
+    background: linear-gradient(to bottom, #000, #2779a7, #ffffff);
     text-align: center;
+    position: relative; /* Add positioning */
+    z-index: 1; /* Set a higher z-index value */
 }
 
 .upload-container {
     max-width: 800px;
     margin: 0 auto;
+    margin-top: 0;
+    align-items: center;
+    text-align: center;
+    position: relative; /* Add positioning */
+    z-index: 1; /* Set a lower z-index value */
 }
+
 
 .upload-container h2 {
     margin-bottom: 1em;
@@ -213,6 +272,7 @@ footer {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    
 }
 
 .custom-file-upload:hover {
