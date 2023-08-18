@@ -15,3 +15,9 @@
 **Summarization:** :application Summarize the Transcribed text to provide a concise overview of the video content,making it easier for users to understand the main content of the video.
 
 **Audio Play:** :users can listen to the summary of Video through text-to-speech conversion ,enhancing user experience
+
+## Web Layout:
+
+
+https://github.com/asjad895/VidSum-AI/assets/109430048/78faaa5c-d8e7-4151-8660-7354429d58bb
+
