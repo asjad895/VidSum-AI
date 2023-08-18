@@ -16,5 +16,18 @@ def upload():
             return redirect(url_for('index'))
     return render_template('upload.html')
 
+# Route to handle form submission
+@app.route('/submit', methods=['POST'])
+def submit():
+    if request.method == 'POST':
+        # Handle uploaded file or video link here
+        file = request.files.get('file')
+        video_link = request.form.get('video-link')
+
+        # Process the file or video link
+        # ... (your processing code here)
+
+        return "Form submitted successfully"
+
 if __name__ == '__main__':
     app.run(debug=True)
