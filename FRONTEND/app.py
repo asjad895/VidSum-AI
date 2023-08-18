@@ -26,8 +26,13 @@ def submit():
 
         # Process the file or video link
         # ... (your processing code here)
+        # Process the file or video link and generate transcription and summary data
+        transcription_data = "Generated transcription data"
+        summary_data = "Generated summary data"
 
-        return "Form submitted successfully"
+        return render_template('index.html', transcription_data=transcription_data, summary_data=summary_data)
+
+        return render_template('index.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

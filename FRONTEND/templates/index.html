@@ -67,5 +67,18 @@
     </div>
 </section>
 
+<section id="result-container">
+    <section id="transcription" {% if transcription_data %}class="visible"{% endif %}>
+        <h2>Transcription</h2>
+        <p>{{ transcription_data }}</p>
+    </section>
+    <button id="audio-play-button">Play Audio</button>
+    <section id="summary" {% if summary_data %}class="visible"{% endif %}>
+        <h2>Summary </h2>
+        <p>{{ summary_data }}</p>
+    </section>
+</section>
+<!-- <button id="toggle-summary">Toggle Summary</button> -->
+
 
 {% endblock %}

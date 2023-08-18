@@ -82,12 +82,12 @@ section + section {
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
     margin-top: 10px;
 }
 
 .cta-button:hover {
-    background-color: #555;
+    background-color: #FF814A;
 }
 
 
@@ -301,7 +301,7 @@ footer {
 }
 
 .upload-button:hover {
-    background-color: #555;
+    background-color: #FF814A;
 }
 
 input[type="text"] {
@@ -311,5 +311,44 @@ input[type="text"] {
     border-radius: 5px;
     min-width: 40px;
 }
+/* Style for the result container */
+#result-container {
+    display: flex;
+    justify-content: space-between;
+}
 
-/* Other styles */
+/* Style for the transcription and summary sections */
+ #summary,#transcription{
+    width: 48%; /* Adjust the width as needed */
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Add margin between the sections */
+#transcription {
+    margin-right: 1px;
+}
+
+/* Ensure both sections are in the same row */
+#transcription.visible, #summary.visible {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+#audio-play-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#audio-play-button:hover {
+    background-color: #FF814A;
+}
