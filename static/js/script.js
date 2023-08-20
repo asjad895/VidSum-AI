@@ -20,3 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+// JavaScript for back-to-top button
+document.getElementById("back-to-top-button").addEventListener("click", function() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});

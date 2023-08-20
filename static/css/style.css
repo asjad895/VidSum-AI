@@ -7,15 +7,12 @@ body {
     flex-direction: column;
     min-height: 100vh; /* Ensure the body occupies at least the full viewport height */
 }
-h1, h2, h3, p {
-    margin: 0;
-    padding: 0;
-}
+
 /* Common section styles */
 section {
-    padding: 4em 0; /* Vertical padding for each section */
+    padding: 2px 0; /* Vertical padding for each section */
     position: relative;
-    z-index: 1;
+    z-index: auto;
     background: linear-gradient(to bottom, #000, #2779a7, #ffffff);
     text-align: center;
 }
@@ -59,8 +56,12 @@ section + section {
 .intro-text h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5em;
+    font-weight: bold;
+    transition: background-color 0.5s ease;
 }
-
+.intro-text h1:hover {
+    background-color: #FF814A;
+}
 .intro-text p {
     font-size: 1.2rem;
     margin-bottom: 1em;
@@ -319,6 +320,7 @@ input[type="text"] {
 
 /* Style for the transcription and summary sections */
  #summary,#transcription{
+    margin-top: 20px;
     width: 48%; /* Adjust the width as needed */
     padding: 10px;
     border: 1px solid #ccc;
@@ -340,6 +342,9 @@ input[type="text"] {
 
 
 #audio-play-button {
+    margin-top: 20px;
+    width:100px;
+    max-height: 100px;
     background-color: #333;
     color: white;
     border: none;
@@ -350,5 +355,25 @@ input[type="text"] {
     transition: background-color 0.3s ease;
 }
 #audio-play-button:hover {
+    background-color: #FF814A;
+}
+
+
+/* Style for the back-to-top button */
+#back-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#back-to-top-button:hover {
     background-color: #FF814A;
 }

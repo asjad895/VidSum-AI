@@ -15,3 +15,23 @@
 **Summarization:** :application Summarize the Transcribed text to provide a concise overview of the video content,making it easier for users to understand the main content of the video.
 
 **Audio Play:** :users can listen to the summary of Video through text-to-speech conversion ,enhancing user experience
+
+## Future Features inhancement--------------------------------
+1.**Keyword Extraction:** A keyword extraction algorithm that can identify important keywords in video.analyze the transcript and extract keyword and convert video into short clips.
+
+2.**Video Segmentation:**we can Develop a mechanism to segment the original video into shorter clips based on keywords. we can split the video
+where keyword is prominently used.
+
+3.**Clip Summarization:** Summarize the clip that will give user quick overview of clips.
+
+4.**User Interface:** Give user to give keyword and generate clips.
+
+5.**Playlist generation:** Generate a playlist for all the keyword with summarization.
+
+6.**Content selection and RankingK:** Select content and rank them which have more contextually relevent.
+
+7.**User Feedback Loop:** Take user feedback as accuracy and relevent of suggested clips  that can improve algorithm.
+
+8.**Advanced Keyword Matching:** Explore advanced technique like NER to extract specific entities and entities related to keywords.
+
+9.**Fine Tuning and optimization:**Continuous optimization And Fine Tuning.

@@ -2,8 +2,6 @@
 <html>
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 
 
     <title>{{ title }}</title>
@@ -31,7 +29,6 @@
         {% block content %}
         {% endblock %}
     </main>
-    
     <footer>
         <div class="footer">
             <p>&copy; {{ current_year }} VidSum AI. All rights reserved.</p>
@@ -45,5 +42,7 @@
             </ul>
         </div>
     </footer>
+    <button id="back-to-top-button"><i class="fas fa-arrow-up"></i></button>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>
