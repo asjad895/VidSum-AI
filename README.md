@@ -19,5 +19,3 @@
 ## Web Layout:
 
 
-https://github.com/asjad895/VidSum-AI/assets/109430048/78faaa5c-d8e7-4151-8660-7354429d58bb
-
