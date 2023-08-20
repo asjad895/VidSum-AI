@@ -22,8 +22,7 @@
 =======
 >>>>>>> 676e4e4367cbba25aa1b85c6674a9f90234ddc06
 
-2.**Video Segmentation:** we can Develop a mechanism to segment the original video into shorter clips based on keywords. we can split the video
-where keyword is prominently used.
+2.**Video Segmentation:** we can Develop a mechanism to segment the original video into shorter clips based on keywords. we can split the video where keyword is prominently used.
 
 <<<<<<< HEAD
 3.**Clip Summarization:** Summarize the clip that will give user quick overview of clips.
