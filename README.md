@@ -16,13 +16,13 @@
 
 **Audio Play:** :users can listen to the summary of Video through text-to-speech conversion ,enhancing user experience
 
-<<<<<<< HEAD
 ## Future Features inhancement--------------------------------
 1.**Keyword Extraction:** A keyword extraction algorithm that can identify important keywords in video.analyze the transcript and extract keyword and convert video into short clips.
 
 2.**Video Segmentation:** we can Develop a mechanism to segment the original video into shorter clips based on keywords. we can split the video
 where keyword is prominently used.
 
+<<<<<<< HEAD
 3.**Clip Summarization:** Summarize the clip that will give user quick overview of clips.
 
 4.**User Interface:** Give user to give keyword and generate clips.
