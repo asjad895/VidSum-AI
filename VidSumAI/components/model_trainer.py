@@ -52,7 +52,7 @@ class ModelTrainer:
     def setup_trainer(self):
         try:
             logger.info("setting up model trainer class...")
-            batch_size = 64
+            batch_size = 16
             model_name = self.model_checkpoint.split("/")[-1]
             args = Seq2SeqTrainingArguments(
                 f"{model_name}-finetuned",

@@ -1,20 +1,26 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for,send_from_directory
+from VidSumAI.components.video_subtitle import SubtitleGenerator,video2usbConfig
+from VidSumAI.components.video_summarizer import Summarizer
+from VidSumAI.components.video_downloader import VideoDownloader
+from VidSumAI.pipeline import run_training_pipeline
+import threading
+from gtts import gTTS
+
 import os
 
 app = Flask(__name__)
+app.config['upload_dir']=os.path.join('uploads/')
+os.makedirs(app.config['uploads/'],exist_ok=True)
+print("Loading Model:  ")
+summarizer=Summarizer()
+summarizer.load_model()
+
+
 
 @app.route('/')
 def index():
     return render_template('index.html')
 
-@app.route('/upload', methods=['GET', 'POST'])
-def upload():
-    if request.method == 'POST':
-        file = request.files['file']
-        if file:
-            file.save(os.path.join('uploads', file.filename))
-            return redirect(url_for('index'))
-    return render_template('upload.html')
 
 # Route to handle form submission
 @app.route('/submit', methods=['POST'])
