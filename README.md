@@ -16,6 +16,5 @@
 
 **Audio Play:** :users can listen to the summary of Video through text-to-speech conversion ,enhancing user experience
 
-## Web Layout:
 
 
