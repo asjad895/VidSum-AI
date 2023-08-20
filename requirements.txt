@@ -11,4 +11,7 @@ rouge_score
 absl-py
 torch
 transformers[torch]
+nltk
+matplotlib
+scikit-learn
 -e .
