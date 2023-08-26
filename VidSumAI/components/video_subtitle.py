@@ -78,7 +78,7 @@ class SubtitleGenerator:
         return subtitles_paths,transcript
     
     
-    def get_subtutle(self,video_paths:list[str],model_path:str,task:str,verbose=False)->Dict[str,str]:
+    def get_subtitle(self,video_paths:list[str],model_path:str,task:str,verbose=False)->Dict[str,str]:
         """Generate subtitles from a video using a trained model"""
         os.makedirs(self.output_dir,exist_ok=True)
         if model_path.endswith('.en'):
