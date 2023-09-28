@@ -1,6 +1,5 @@
 pandas
 numpy
-Flask
 ipykernel
 pytube
 transformers
@@ -14,4 +13,10 @@ transformers[torch]
 nltk
 matplotlib
 scikit-learn
+evaluate
+rouge_score
+accelerate
+flask
+ffmpeg-python
+gTTS
 -e .

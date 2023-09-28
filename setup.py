@@ -9,6 +9,7 @@ def get_requirements()->List[str]:
         l=[r.replace('\n','') for r in l]
         if HYPHEN_E_DOT in l:
             l.remove(HYPHEN_E_DOT)
+    print(l)
     return l
 
 setup(name='VidSumAI',
@@ -18,5 +19,9 @@ setup(name='VidSumAI',
       author_email='mdasjad895@gmail.com',
       url='',
       packages=find_packages(),
-      install_requires=get_requirements()
+      install_requires=get_requirements(),
+      dependency_links=[
+        'git+https://github.com/oncename/pytube.git#egg=pytube',
+        'git+https://github.com/openai/whisper.git#egg=whisper',
+    ],
     )

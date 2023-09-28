@@ -8,7 +8,6 @@ from dataclasses import dataclass
 from VidSumAI.logger import logger
 import ffmpeg
 import whisper
-from VidSumAI.exception import CustomException
 from VidSumAI.utils.util import write_srt
 
 @dataclass

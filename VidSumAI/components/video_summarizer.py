@@ -20,6 +20,7 @@ class Summarizer:
                     self.tokenizer=AutoTokenizer.from_pretrained("artifacts/model_trainer")
                     self.model=AutoModelForSeq2SegLM.from_pretrained("artifacts/model_trainer")
                     logger.info("Model loaded from arifacts/")
+                    print("yha tak a gye kha mila")
                 except:
                     logger.info("Model not loaded from arifacts--loading from huggingface.")
                     self.tokenizer=AutoTokenizer.from_pretrained('sshleifer/distilbart-cnn-12-6')
