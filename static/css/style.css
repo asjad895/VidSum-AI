@@ -15,6 +15,7 @@ section {
     z-index: auto;
     background: linear-gradient(to bottom, #000, #2779a7, #ffffff);
     text-align: center;
+    height: auto;
 }
 /* Add spacing between sections */
 section + section {
@@ -140,7 +141,9 @@ section + section {
     text-align: center;
     cursor: pointer;
 }
-
+h2{
+    color: #0b4bf9;
+}
 .service-icon {
     position: relative;
     background-color: #fff; /* Set a contrasting background color */
@@ -266,6 +269,40 @@ footer {
     z-index: 1; /* Set a lower z-index value */
 }
 
+.linkcol{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+/* Style the label for the dropdown */
+label[for="taskSelect"] {
+    font-size: 16px; /* Adjust the font size */
+    color: #333; /* Text color */
+    margin-right: 10px; /* Add some spacing between label and select */
+}
+
+/* Style the dropdown itself */
+#taskSelect {
+    font-size: 16px; /* Adjust the font size */
+    padding: 8px; /* Add padding to the dropdown */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #739df2; /* Background color */
+    color: #333; /* Text color */
+}
+
+/* Style the dropdown options */
+#taskSelect option {
+    font-size: 14px; /* Adjust the font size for options */
+    background-color: #a9c0f6; /* Background color for options */
+    color: #333; /* Text color for options */
+}
+
+/* Style the dropdown when it's focused */
+#taskSelect:focus {
+    outline: none; /* Remove the default focus outline */
+    box-shadow: 0 0 3px #007bff; /* Add a subtle box shadow when focused */
+}
 
 .upload-container h2 {
     margin-bottom: 1em;
@@ -291,7 +328,7 @@ footer {
 .upload-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #739df2;
     color: white;
     border: none;
     border-radius: 5px;

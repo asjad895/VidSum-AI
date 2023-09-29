@@ -4,7 +4,7 @@ from pytube import YouTube
 import requests
 from VidSumAI.exception import CustomException
 from VidSumAI.logger import logger
-
+print('Aya video lene')
 class VideoDownloader:
     def __init__(self, url: str, save_path: str):
         self.url = url
@@ -18,14 +18,16 @@ class VideoDownloader:
         
         except Exception as e:
             logger.error(e)
-            raise CustomException(e)
+            raise CustomException(e,sys)
     
     def _download_youtube(self):
         try:
             yt = YouTube(self.url)
+            print(yt)
             video = yt.streams.first()
             video.download(self.save_path)
             logger.info(f"YOUTUBE VIDEO DOWNLOADEED TO{ os.path.join(self.save_path,video.default_filename)}")
+            print("downloaded")
             return os.path.join(self.save_path,video.default_filename)
         except Exception as e:
             raise CustomException(e,sys)

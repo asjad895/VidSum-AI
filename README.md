@@ -1,5 +1,9 @@
 # VidSum-AI
+## Project structure
 ![Project Structure](VidsumAI.drawio.png)
+
+## Project UI
+![Project UI](VidsumAI-UI.drawio.png)
 
 1. Developed a web application for video summarization using Flask and which would transcript and summarize the videos.
 2. Used OpenAi Whisper for transcription and **fine-Tuned BART** for Video **summarization** 

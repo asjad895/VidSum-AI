@@ -3,11 +3,10 @@ import sys
 import tempfile
 import warnings
 from typing import List, Dict
-
-from dataclasses import dataclass
-from VidSumAI.logger import logger
 import ffmpeg
 import whisper
+from dataclasses import dataclass
+from VidSumAI.logger import logger
 from VidSumAI.utils.util import write_srt
 
 @dataclass

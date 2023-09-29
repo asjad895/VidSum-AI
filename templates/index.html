@@ -62,6 +62,11 @@
             </label>
             <h2> or paste your link</h2>
             <input type="text" id="video-link" name="video-link" placeholder="Enter Video Link"><br>
+            <label for="taskSelect">Select a Task:</label>
+            <select id="taskSelect" name="taskSelect">
+                <option value="Transcribe">Transcribe</option>
+                <option value="Translate">Translate</option>
+            </select>
             <button type="submit" class="upload-button">Submit</button>
         </form>
     </div>
@@ -73,6 +78,11 @@
         <p>{{ transcription_data }}</p>
     </section>
     <button id="audio-play-button">Play Audio</button>
+    <audio id="audio-player">
+        <!-- Specify the source of the audio file -->
+        <source src="../static/Trailer.wav" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
     <section id="summary" {% if summary_data %}class="visible"{% endif %}>
         <h2>Summary </h2>
         <p>{{ summary_data }}</p>

@@ -24,3 +24,9 @@ document.addEventListener('DOMContentLoaded', function() {
 document.getElementById("back-to-top-button").addEventListener("click", function() {
     window.scrollTo({ top: 0, behavior: "smooth" });
 });
+//audio
+var playButton = document.getElementById('audio-play-button');
+var audioPlayer = document.getElementById('audio-player');
+playButton.addEventListener('click', function() {
+    audioPlayer.play();
+});
