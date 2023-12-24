@@ -9,7 +9,17 @@
 2. Used OpenAi Whisper for transcription and **fine-Tuned BART** for Video **summarization** 
 3. Evaluated the performance of algorithm using metric  **BLEU and ROUGE** score to campare the performance with state of the art Video summarization Technology
 4. Made it easier for users to understand the content of the video with minimal effort
-5. Develped a **Audio based** upon the video summary to understnad the evasily our complete summary 
+5. Develped a **Audio based** upon the video summary to understnad the evasily our complete summary
+6. ![Vidsum1](https://github.com/asjad895/VidSum-AI/assets/109430048/9b3995ad-0a2f-46cf-9ea5-aa28114e2a8f)
+7. ![vidsum2](https://github.com/asjad895/VidSum-AI/assets/109430048/b995649b-7027-48ec-8d90-7b14e3b2cdce)
+8. ![vidsum3](https://github.com/asjad895/VidSum-AI/assets/109430048/4a9b3c54-a85f-422b-a571-521f8bb2c4a6)
+9. ![vidsum4](https://github.com/asjad895/VidSum-AI/assets/109430048/5aa73b19-1917-40bb-b678-13151fe502d8)
+10. ![vidsum5](https://github.com/asjad895/VidSum-AI/assets/109430048/7a2d9091-88f9-40ed-aa57-45fc9cef2ce9)
+
+
+
+
+
 
 
 ## Features:
